@@ -1,6 +1,6 @@
 import { g, auth, config } from '@grafbase/sdk'
 
-// @ts-ignore
+// @ts-ignore 
 const User = g.model('User', {
   name: g.string().length({min: 2, max: 20}),
   email: g.string().unique(),
